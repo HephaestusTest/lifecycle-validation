@@ -33,3 +33,10 @@ public class UserService {
 
     public record User(String name, String email) {}
 }
+
+// Added for admin functionality
+class UserRole {
+    String role;
+    String userId;
+    public UserRole(String r, String u) { this.role = r; this.userId = u; }
+}
